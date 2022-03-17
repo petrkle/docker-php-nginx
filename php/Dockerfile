@@ -1,4 +1,4 @@
-FROM php:7-fpm
+FROM php:8.1-fpm
 
 RUN apt-get update && apt-get install -y locales locales-all libicu-dev \
     && docker-php-ext-install intl \
